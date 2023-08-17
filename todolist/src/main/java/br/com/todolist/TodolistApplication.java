@@ -20,10 +20,12 @@ public class TodolistApplication {
 			Todo todo1 = new Todo("Configurar JDK", "Preciso aprender a configurar o jdk corretamente", StatusEnum.NOT_STARTED);
 			Todo todo2 = new Todo("Estudar Java", "Estudar Java para aprender programação", StatusEnum.IN_PROGRESS);
 			Todo todo3 = new Todo("Estudar HTML", "Estudar HTML para aprender programação", StatusEnum.FINISHED);
+			Todo todo4 = new Todo("Estudar CSS", "Estudar CSS para estilização", StatusEnum.NOT_STARTED);
 
 			todoRpository.save(todo1);
 			todoRpository.save(todo2);
 			todoRpository.save(todo3);
+			todoRpository.save(todo4);
 		};
 	}
 }
