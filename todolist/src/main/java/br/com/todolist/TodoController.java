@@ -27,7 +27,7 @@ public class TodoController {
     public Todo create(@RequestBody Todo tarefa) {
         return this.todoRepo.save(tarefa);
     }
-    @DeleteMapping("/{todoId}")
+    @DeleteMapping("/{tarefaId}")
     public ResponseEntity<Void> delete(@PathVariable Integer tarefaId) {
         Optional<Todo> todo = this.todoRepo.findById(tarefaId);
         if (todo.isPresent()) {
